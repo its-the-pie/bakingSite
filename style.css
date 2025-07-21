@@ -14,10 +14,23 @@ h3 {
     color: rgba(59, 21, 4, 0.796);
 }
 
+a {
+    font-size: medium;
+    font-weight:600;
+}
+
+.heading {
+    padding-top: 20px; 
+    text-align: center;
+}
+
 .content {
-    margin-top: 30px;
     margin-left: 2%;
     width: 96%;
+    margin-top: 120px; 
+    margin-bottom: 120px;
+    display: flex; 
+    flex-direction: column;
 }
 
 #full {
@@ -65,6 +78,7 @@ h3 {
     background-color: rgb(232, 201, 155);
     border-radius: 10px;
     margin-top: 20px;
+    margin: 20px;
 }
 
 .recipe {
@@ -74,21 +88,31 @@ h3 {
     text-wrap: wrap;
 }
 
+/*recipe slides/carousel on home page*/
 .slide {
     background-color: rgba(232, 201, 155, 0.602);
-    width: 100%;
-    max-height: 10%;
-    padding: 20px;
+    width: 20%; /*gives them a good size*/
+    flex-shrink: 0; /*this keeps them from auto-sizing*/
     border-radius: 10px;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding: 20px;
     display: flex;
+    flex-direction: column;
 }
 
 .allSlides {
     display: flex;
-    width: 100%;
+    overflow: scroll;
+    gap: 20px; /*gap between slides*/
+    padding-bottom: 20px; 
+    list-style: none;
+}
+
+.slideContainer {
+    padding: 20px;
+}
+
+.slideContent {
+    height: 100%;
 }
 
 .recipeFull {
@@ -101,18 +125,15 @@ h3 {
 }
 
 .recipeButton {
+    align-self: center;
     text-decoration: none;
+    text-align: center;
     color: blanchedalmond;
     font-weight: 600;
     background-color: rgb(114, 78, 10);
     width: fit-content;
-    margin: 0px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 10px;
     border-radius: 10px;
-    
 }
 
 #navDiv {
@@ -198,3 +219,4 @@ a:hover {
 a:active { 
     color: blanchedalmond;
 }
+
