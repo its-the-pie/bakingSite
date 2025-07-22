@@ -2,28 +2,33 @@
     <ul style="z-index: 9999999; font-size: large;">
         <li style="margin-left: -70px;"><a href="/index.html"><img src="/images/cookie.png" style="width: 25px; height: 25px;"></a></li>
         <li style="margin-left: -70px;"><a href="/index.html">Home</a></li>
-        <li><a href="/all-recipes/index.html">All Recipes</a></li>
+        <li><a href="all_recipes/index.html">All Recipes</a></li>
         <li class="dropdown">
-            <div class="dropdown-button" onclick="showDesserts()">Food!</div>
+            <div class="dropdown-button" onclick="showSweets()">Sweets!</div>
             <div class="dropdown-content" id="desserts-content">
-                <a href="/cookies/index.html">Cookies</a>
-                <a href="/cakes/index.html">Cakes</a>
-                <a href="/tarts-and-pies/index.html">Tarts&Pies</a>
-                <a href="/">Other Desserts</a>
+                <a href="sweets/cookies&brownies.html">Cookies&Brownies</a>
+                <a href="sweets/cakes.html">Cakes</a>
+                <a href="sweets/pies&tarts.html">Pies&Tarts</a>
+                <a href="sweets/other.html">Other Desserts</a>
             </div>
         </li>
-        <li><a href="/bread/index.html">Bread</a></li>
+        <li><a href="breads/breads.html">Bread</a></li>
         <li class="dropdown">
-            <div class="dropdown-button" onclick="showFoods()">Food!</div>
+            <div class="dropdown-button" onclick="showFood()">Food!</div>
             <div class="dropdown-content" id="food-content">
-                <a class="dropdown-style" href="">Breakfast</a>
-                <a class="dropdown-style" href="">Lunch</a>
-                <a class="dropdown-style" href="">Dinner</a>
+                <a class="dropdown-style" href="recipes/meals/breakfast.html">Breakfast</a>
+                <a class="dropdown-style" href="recipes/meals/lunch.html">Lunch</a>
+                <a class="dropdown-style" href="recipes/meals/dinner.html">Dinner</a>
             </div>
         </li>
-
-                <a class="dropdown-style" href="">Appetizers</a>
-                <a class="dropdown-style" href="">Snacks!</a>
+        <li class="dropdown">
+            <div class="dropdown-button" onclick="showMisc()">Misc.</div>
+            <div class="dropdown-content">
+                <a class="dropdown-style" href="recipes/misc/appets.html">Appetizers</a>
+                <a class="dropdown-style" href="recipes/misc/snacks.html">Snacks!</a>
+                <a class="dropdown-style" href="recipes/misc/other.html"></a>
+            </div>
+        </li>
         <li><a href="about-yasmin.html">About Me</a></li>
     </ul>
 </div>
